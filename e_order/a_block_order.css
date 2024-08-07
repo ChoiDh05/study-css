@@ -23,20 +23,20 @@ body {
 }
 
 #container, #article {
-
+    display: flex;
+    flex-direction: column;
     width: 100px;
     height: 100px;
     background-color: crimson;
 }
 #container{
-    display: flex;
-    justify-content: right;
+    
+    justify-content: end;
     align-items: end;
 }
 #article{
-    display: flex;
-    justify-content: left;
-    align-items: end;
+    justify-content: end;
+    align-items: start;
 }
 .element {
     width: 30px;
