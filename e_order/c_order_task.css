@@ -29,7 +29,7 @@
 #c{
     justify-content: start;
     align-items: end;
-    margin:
+    
 }
 
 #d{
@@ -71,10 +71,11 @@
 }
 
 #h{
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
     border: 2px solid black;
-    display: flex;
-    justify-content: end;
-    align-items: end;
     background-color: hotpink;
 }
 
