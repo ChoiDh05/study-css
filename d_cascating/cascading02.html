@@ -18,12 +18,22 @@
             body p {
                 color: green;
             }
+            /* 여름의 배경색을 파란색으로 변경 */
+            /* 봄과 여름에만 글자색을 핫핑크색으로 변경 */
+
+            p.summer {
+                background-color: pink;
+            }
+            p.spring,
+            p.summer {
+                color: hotpink;
+            }
         </style>
     </head>
     <body>
-        <p>봄</p>
-        <p class="summer" style="color: pink">여름</p>
-        <p>가을</p>
-        <p>겨울</p>
+        <p class="spring">봄</p>
+        <p class="summer" style="background-color: blue">여름</p>
+        <p class="fall">가을</p>
+        <p class="winter">겨울</p>
     </body>
 </html>
