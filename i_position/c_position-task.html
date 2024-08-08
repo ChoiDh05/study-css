@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position 실습</title>
+        <style>
+            #image {
+                margin: 0 auto;
+                width: 220px;
+                height: 315px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            .flower {
+                font-size: 150px;
+                width: 200px;
+                height: 100px;
+            }
+            #icon {
+                margin: 0 auto;
+                width: 800px;
+                height: 350px;
+                border: 1px solid green;
+                background-color: green;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+            }
+
+            #f0 {
+                position: absolute;
+                bottom: 30%;
+                left: 0%;
+            }
+            #f1 {
+                position: absolute;
+                bottom: 30%;
+                left: 10%;
+            }
+            #f2 {
+                position: absolute;
+                bottom: 30%;
+                left: 20%;
+            }
+            #f3 {
+                position: absolute;
+                bottom: 30%;
+                left: 30%;
+            }
+            #f4 {
+                position: absolute;
+                bottom: 30%;
+                right: 30%;
+            }
+            #f5 {
+                position: absolute;
+                bottom: 30%;
+                right: 20%;
+            }
+            #f6 {
+                position: absolute;
+                bottom: 30%;
+                right: 10%;
+            }
+            #f7 {
+                position: absolute;
+                bottom: 30%;
+                right: 0%;
+            }
+            #f8 {
+                font-size: 30px;
+                position: absolute;
+                right: 45%;
+                top: 16%;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="icon">
+            <div id="image"></div>
+            <div id="f0" class="flower">🌼</div>
+            <div id="f1" class="flower">🌷</div>
+            <div id="f2" class="flower">🌼</div>
+            <div id="f3" class="flower">🌷</div>
+            <div id="f4" class="flower">🌷</div>
+            <div id="f5" class="flower">🌼</div>
+            <div id="f6" class="flower">🌷</div>
+            <div id="f7" class="flower">🌼</div>
+            <div id="f8">💮</div>
+        </div>
+        <h1><꽃미남></h1>
+    </body>
+</html>

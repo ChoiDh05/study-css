@@ -1,0 +1,11 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumYuNiDdingDdangDdingDdang.css");
+h1{
+    font-family: 'NanumYuNiDdingDdangDdingDdang';
+}
+
+@font-face{font-family:"NanumBarunGothic";
+    url(https://img2.quasarzone.com/homepage/real/themes/quasarzone/font/nanum/NanumBarunGothic.woff) format('woff');}
+
+h2{
+    font-family: "NanumBarunGothic";
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <title>position 실습</title>
+                <style>
+                    #backgrouond {
+                        margin: 0 auto;
+                        background-color: black;
+                        width: 220px;
+                        height: 315px;
+                        position: relative;
+                    }
+                    #image {
+                        margin: 0 auto;
+                        width: 220px;
+                        height: 315px;
+                        background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: absolute;
+                        left: 0%;
+                    }
+                    #sun {
+                        margin: 0 auto;
+                        width: 800px;
+                        height: 800px;
+                        background-image: url("/i_position/images/image-removebg-preview.png");
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: absolute;
+                        left: -143%;
+                        bottom: -55%;
+                    }
+                    h1 {
+                        text-align: center;
+                    }
+                </style>
+            </head>
+            <body>
+                <div id="backgrouond">
+                    <div id="image"></div>
+                    <div id="sun"></div>
+                </div>
+                <h1><그저 빛></h1>
+            </body>
+        </html>
+    </body>
+</html>
