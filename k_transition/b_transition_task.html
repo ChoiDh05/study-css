@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transition 실습</title>
+        <style>
+            div:nth-child(1) {
+                width: 200px;
+                height: 100px;
+                background-color: red;
+                /* transition: width 1s, background-color 1s, opacity 1s 1s; */
+                transition-property: width, background-color, transform, opacity;
+                transition-duration: 1s, 1s, 1s, 1s;
+                transition-delay: 0s, 0s, 0s, 1s;
+            }
+
+            div:nth-child(1):hover {
+                width: 500px;
+                background-color: blue;
+                transform: translateX(20px);
+                opacity: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
