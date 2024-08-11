@@ -3,293 +3,448 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="clone.css" />
+        <link
+            link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css"
+        />
         <title>포스타입-창작에 수익을 더하다</title>
     </head>
     <body>
-        <header class="header" role="banner">
-            <nav class="navbar-first">
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+        <header class="header slide-left pool-header" role="banner">
+            <nav class="navbar navbar-first primary-nav">
+                <div class="container pool">
+                    <div class="d-flex item-center">
+                        <a class="pt-logo" href="https://www.postype.com/">
+                            <span class="text-hide logo-img-dark">POSTYPE</span>
+                        </a>
+                        <div class="navbar-brand d-none d-flex">
+                            <div class="nav-item">
+                                <a class="nav-link text-alpha-black" href=""
+                                    >홈</a
+                                >
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link text-alpha-black" href=""
+                                    >구독</a
+                                >
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link text-alpha-black" href=""
+                                    >보관함</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-nav">
+                        <!-- <a
+                            class="btn btn-icon navbar-toggler"
+                            id="search-toggler"
+                            href=""
+                            aria-expanded="false"
+                            aria-label="검색창 보이기/감추기"
+                        >
+                            <i class="fla search fa"></i>
+                        </a> -->
+                        <a id="login-ntn" class="btn btn-secondary" href=""
+                            >로그인</a
+                        >
+                        <a id="sign-up-btn" class="btn btn-primary" href=""
+                            >회원가입</a
+                        >
+                    </div>
+                    <div
+                        class="navbar-collapse justify-content-end"
+                        id="search-collapse"
+                    >
+                        <form
+                            class="search-form form-inline"
+                            role="search"
+                            action="/search"
+                        >
+                            <div class="inner">
+                                <label for="intergrated-search" class="sr-only"
+                                    >통합검색</label
+                                >
+                                <span class="search-icon">
+                                    <i class="fal fa-search"> </i>
+                                </span>
+                                <input
+                                    id="intergrated-search"
+                                    class="form-control form-sm"
+                                    name="keward"
+                                    value
+                                    data-action="grow"
+                                    type="search"
+                                    placeholder="검색어를 입력해주세요"
+                                    maxlength="50"
+                                />
+                                <button
+                                    type="button"
+                                    class="btn btn-icon btn-clear"
+                                >
+                                    <i class="fal fa-times btn-clear"></i>
+                                </button>
+                            </div>
+                            <a class="btn search-closer d-none" href="#"
+                                >닫기</a
+                            >
+                        </form>
+                    </div>
                 </div>
             </nav>
-            <nav class="navbar-second">
-                <div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+            <nav class="navbar navbar-second pool-home" role="navigation">
+                <div class="container">
+                    <ul
+                        class="nav nav-inline justify-content-start"
+                        id="main-nav"
+                    >
+                        <li class="nav-item">
+                            <a class="nav-link text-alpha-black active" href=""
+                                >발견</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-alpha-black active" href=""
+                                >스토어</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-alpha-black active" href=""
+                                >컬렉션</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-alpha-black active" href=""
+                                >이벤트</a
+                            >
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main class="main-content-pool" id="main-contente">
-            <div class="main-home">
+        <main class="main-content slide-left pool" id="pool-main-content">
+            <div id="main-home" class="home-container">
                 <div class="home-body" id="recomend-posts">
-                    <div class="post-container-title">
+                    <div class="posts-container-title">
                         이런 콘텐츠는 어떠세요?
                     </div>
                     <div class="posts-list-container">
-                        <div class="pool-post-container">
-                            <div class="post-contents">
-                                <div class="post-data-wrapper">
-                                    <a class="post-home-main" href="">
-                                        <h3 class="title">포스트 제목</h3>
-                                        <div class="contents">
-                                            <p>포스트 내용</p>
+                        <div class="posts-list">
+                            <div class="pool-post-container">
+                                <div class="post-contents">
+                                    <div class="post-data-wrapper">
+                                        <a class="post-data home-main" href="">
+                                            <h3 class="title">포스트 제목</h3>
+                                            <div class="contents">
+                                                <p>포스트 내용</p>
+                                            </div>
+                                        </a>
+                                        <div class="post-tags">
+                                            <span class="promotion">
+                                                프로모션
+                                            </span>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
                                         </div>
-                                    </a>
-                                    <div class="post-tags">
-                                        <span class="promotion">
-                                            프로모션
-                                        </span>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
+                                    </div>
+                                    <div class="post-thumbnail">
+                                        <a href="">
+                                            <img
+                                                src="images/image(1).png"
+                                                alt=""
+                                            />
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="post-thumbnail">
-                                    <a href="">
-                                        <img src="" alt="" />::after
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-content-bottom">
-                                <div class="post-author">
-                                    <a class="user-profile-avatar" href="">
-                                        <img src="" alt="" />
-                                    </a>
-                                    <div class="footer-info">
-                                        <div
-                                            class="user-profile-nickname text-truncate"
+                                <div class="post-contents-bottom">
+                                    <div class="post-author">
+                                        <a
+                                            class="user-profile-avatar"
+                                            href="https://www.postype.com/profile/@6tu89e"
                                         >
-                                            <a href="">닉네임</a>
-                                        </div>
-                                        <div class="meta-time">
-                                            <time class="meta-time">
-                                                post작성날짜
-                                            </time>
+                                            <img
+                                                src="images/image(2).png"
+                                                alt=""
+                                            />
+                                        </a>
+                                        <div class="footer-info">
+                                            <div
+                                                class="user-profile-nickname text-truncate"
+                                            >
+                                                <a href="">HCL</a>
+                                            </div>
+                                            <div
+                                                class="meta-time text-alpha-black"
+                                            >
+                                                <time class="meta-item">
+                                                    post작성날짜
+                                                </time>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="post-action">
-                                    <a href="">
-                                        <i class="fal bookmark-text">
-                                            ::before
-                                        </i>
-                                    </a>
-                                    <div class="dropdown">
-                                        <button class="btn btn-icon btn-more">
-                                            <i class="fal ellipsis">
-                                                ::before
-                                            </i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pool-post-container">
-                            <div class="post-contents">
-                                <div class="post-data-wrapper">
-                                    <a class="post-home-main" href="">
-                                        <h3 class="title">포스트 제목</h3>
-                                        <div class="contents">
-                                            <p>포스트 내용</p>
-                                        </div>
-                                    </a>
-                                    <div class="post-tags">
-                                        <span class="promotion">
-                                            프로모션
-                                        </span>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                    </div>
-                                </div>
-                                <div class="post-thumbnail">
-                                    <a href="">
-                                        <img src="" alt="" />::after
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-content-bottom">
-                                <div class="post-author">
-                                    <a class="user-profile-avatar" href="">
-                                        <img src="" alt="" />
-                                    </a>
-                                    <div class="footer-info">
-                                        <div
-                                            class="user-profile-nickname text-truncate"
+                                    <div class="post-action">
+                                        <a
+                                            href=""
+                                            class="btn btn-icon btn-scrap"
                                         >
-                                            <a href="">닉네임</a>
-                                        </div>
-                                        <div class="meta-time">
-                                            <time class="meta-time">
-                                                post작성날짜
-                                            </time>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-action">
-                                    <a href="">
-                                        <i class="fal bookmark-text">
-                                            ::before
-                                        </i>
-                                    </a>
-                                    <div class="dropdown">
-                                        <button class="btn btn-icon btn-more">
-                                            <i class="fal ellipsis">
-                                                ::before
+                                            <i
+                                                class="fal fa-bookmark default-text"
+                                            >
                                             </i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pool-post-container">
-                            <div class="post-contents">
-                                <div class="post-data-wrapper">
-                                    <a class="post-home-main" href="">
-                                        <h3 class="title">포스트 제목</h3>
-                                        <div class="contents">
-                                            <p>포스트 내용</p>
+                                            <i
+                                                class="fal fa-bookmark active-text"
+                                            ></i>
+                                        </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-icon btn-more ic-secondary"
+                                            >
+                                                <i class="fal fa-ellipsis-h">
+                                                </i>
+                                            </button>
                                         </div>
-                                    </a>
-                                    <div class="post-tags">
-                                        <span class="promotion">
-                                            프로모션
-                                        </span>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
                                     </div>
                                 </div>
-                                <div class="post-thumbnail">
-                                    <a href="">
-                                        <img src="" alt="" />::after
-                                    </a>
-                                </div>
                             </div>
-                            <div class="post-content-bottom">
-                                <div class="post-author">
-                                    <a class="user-profile-avatar" href="">
-                                        <img src="" alt="" />
-                                    </a>
-                                    <div class="footer-info">
-                                        <div
-                                            class="user-profile-nickname text-truncate"
+                            <div class="pool-post-container">
+                                <div class="post-contents">
+                                    <div class="post-data-wrapper">
+                                        <a class="post-data home-main" href="">
+                                            <h3 class="title">포스트 제목</h3>
+                                            <div class="contents">
+                                                <p>포스트 내용</p>
+                                            </div>
+                                        </a>
+                                        <div class="post-tags">
+                                            <span class="promotion">
+                                                프로모션
+                                            </span>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-thumbnail">
+                                        <a href="">
+                                            <img
+                                                src="images/image(2).png"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-contents-bottom">
+                                    <div class="post-author">
+                                        <a class="user-profile-avatar" href="">
+                                            <img
+                                                src="images/image(1).png"
+                                                alt=""
+                                            />
+                                        </a>
+                                        <div class="footer-info">
+                                            <div
+                                                class="user-profile-nickname text-truncate"
+                                            >
+                                                <a href="">닉네임</a>
+                                            </div>
+                                            <div class="meta-time">
+                                                <time class="meta-time">
+                                                    post작성날짜
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-action">
+                                        <a
+                                            href=""
+                                            class="btn btn-icon btn-scrap"
                                         >
-                                            <a href="">닉네임</a>
-                                        </div>
-                                        <div class="meta-time">
-                                            <time class="meta-time">
-                                                post작성날짜
-                                            </time>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-action">
-                                    <a href="">
-                                        <i class="fal bookmark-text">
-                                            ::before
-                                        </i>
-                                    </a>
-                                    <div class="dropdown">
-                                        <button class="btn btn-icon btn-more">
-                                            <i class="fal ellipsis">
-                                                ::before
+                                            <i
+                                                class="fal fa-bookmark default-text"
+                                            >
                                             </i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pool-post-container">
-                            <div class="post-contents">
-                                <div class="post-data-wrapper">
-                                    <a class="post-home-main" href="">
-                                        <h3 class="title">포스트 제목</h3>
-                                        <div class="contents">
-                                            <p>포스트 내용</p>
+                                            <i
+                                                class="fal fa-bookmark active-text"
+                                            ></i>
+                                        </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-icon btn-more ic-secondary"
+                                            >
+                                                <i class="fal fa-ellipsis-h">
+                                                </i>
+                                            </button>
                                         </div>
-                                    </a>
-                                    <div class="post-tags">
-                                        <span class="promotion">
-                                            프로모션
-                                        </span>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
-                                        <a href="">태그</a>
                                     </div>
                                 </div>
-                                <div class="post-thumbnail">
-                                    <a href="">
-                                        <img src="" alt="" />::after
-                                    </a>
-                                </div>
                             </div>
-                            <div class="post-content-bottom">
-                                <div class="post-author">
-                                    <a class="user-profile-avatar" href="">
-                                        <img src="" alt="" />
-                                    </a>
-                                    <div class="footer-info">
-                                        <div
-                                            class="user-profile-nickname text-truncate"
+                            <div class="pool-post-container">
+                                <div class="post-contents">
+                                    <div class="post-data-wrapper">
+                                        <a class="post-data home-main" href="">
+                                            <h3 class="title">포스트 제목</h3>
+                                            <div class="contents">
+                                                <p>포스트 내용</p>
+                                            </div>
+                                        </a>
+                                        <div class="post-tags">
+                                            <span class="promotion">
+                                                프로모션
+                                            </span>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-thumbnail">
+                                        <a href="">
+                                            <img
+                                                src="images/image(1).png"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-contents-bottom">
+                                    <div class="post-author">
+                                        <a class="user-profile-avatar" href="">
+                                            <img src="" alt="" />
+                                        </a>
+                                        <div class="footer-info">
+                                            <div
+                                                class="user-profile-nickname text-truncate"
+                                            >
+                                                <a href="">닉네임</a>
+                                            </div>
+                                            <div class="meta-time">
+                                                <time class="meta-time">
+                                                    post작성날짜
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-action">
+                                        <a
+                                            href=""
+                                            class="btn btn-icon btn-scrap"
                                         >
-                                            <a href="">닉네임</a>
-                                        </div>
-                                        <div class="meta-time">
-                                            <time class="meta-time">
-                                                post작성날짜
-                                            </time>
+                                            <i
+                                                class="fal fa-bookmark default-text"
+                                            >
+                                            </i>
+                                            <i
+                                                class="fal fa-bookmark active-text"
+                                            ></i>
+                                        </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-icon btn-more ic-secondary"
+                                            >
+                                                <i class="fal fa-ellipsis-h">
+                                                </i>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="post-action">
-                                    <a href="">
-                                        <i class="fal bookmark-text">
-                                            ::before
-                                        </i>
-                                    </a>
-                                    <div class="dropdown">
-                                        <button class="btn btn-icon btn-more">
-                                            <i class="fal ellipsis">
-                                                ::before
+                            </div>
+                            <div class="pool-post-container">
+                                <div class="post-contents">
+                                    <div class="post-data-wrapper">
+                                        <a class="post-data home-main" href="">
+                                            <h3 class="title">포스트 제목</h3>
+                                            <div class="contents">
+                                                <p>포스트 내용</p>
+                                            </div>
+                                        </a>
+                                        <div class="post-tags">
+                                            <span class="promotion">
+                                                프로모션
+                                            </span>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                            <a href="">태그</a>
+                                        </div>
+                                    </div>
+                                    <div class="post-thumbnail">
+                                        <a href="">
+                                            <img
+                                                src="images/image(1).png"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-contents-bottom">
+                                    <div class="post-author">
+                                        <a class="user-profile-avatar" href="">
+                                            <img
+                                                src="images/image(1).png"
+                                                alt=""
+                                            />
+                                        </a>
+                                        <div class="footer-info">
+                                            <div
+                                                class="user-profile-nickname text-truncate"
+                                            >
+                                                <a href="">닉네임</a>
+                                            </div>
+                                            <div class="meta-time">
+                                                <time class="meta-time">
+                                                    post작성날짜
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-action">
+                                        <a
+                                            href=""
+                                            class="btn btn-icon btn-scrap"
+                                        >
+                                            <i
+                                                class="fal fa-bookmark default-text"
+                                            >
                                             </i>
-                                        </button>
+                                            <i
+                                                class="fal fa-bookmark active-text"
+                                            ></i>
+                                        </a>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-icon btn-more ic-secondary"
+                                            >
+                                                <i class="fal fa-ellipsis-h">
+                                                </i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="refresh-contents">
                         <button
                             class="btn btn-secondary"
-                            id="btn-reflesh-contents"
+                            id="btn-refresh-contents"
                         >
-                            <i> ::before </i>
+                            <i class="far fa-sync"> </i>
                             "콘텐츠 발견하기"
                         </button>
                     </div>
                 </div>
                 <div class="home-body">
                     <div class="container-title">오늘 인기 포스트</div>
-                    <div class="keyword-lis">
+                    <div class="keyword-list">
                         <a href="#">웹툰</a>
                         <a href="#">웹소설</a>
                         <a href="#">창작소재</a>
@@ -308,10 +463,12 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
-                                            <img src="" alt="" />
+                                        <div class="grid-image-wrapper">
+                                            <img
+                                                src="images/image(3).png"
+                                                alt=""
+                                            />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -336,21 +493,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -361,7 +530,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -378,10 +546,12 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
-                                            <img src="" alt="" />
+                                        <div class="grid-image-wrapper">
+                                            <img
+                                                src="images/image(4).png"
+                                                alt=""
+                                            />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -406,21 +576,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -431,7 +613,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -448,10 +629,12 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
-                                            <img src="" alt="" />
+                                        <div class="grid-image-wrapper">
+                                            <img
+                                                src="images/image(1).png"
+                                                alt=""
+                                            />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -476,21 +659,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -501,7 +696,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -518,10 +712,12 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
-                                            <img src="" alt="" />
+                                        <div class="grid-image-wrapper">
+                                            <img
+                                                src="images/image(2).png"
+                                                alt=""
+                                            />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -546,21 +742,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -571,7 +779,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -591,7 +798,7 @@
                 </div>
                 <div class="home-body">
                     <div class="container-title">새로 나온 포스트</div>
-                    <div class="keyword-lis">
+                    <div class="keyword-list">
                         <a href="#">웹툰</a>
                         <a href="#">웹소설</a>
                         <a href="#">창작소재</a>
@@ -610,10 +817,9 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
+                                        <div class="grid-image-wrapper">
                                             <img src="" alt="" />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -638,21 +844,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -663,7 +881,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -680,10 +897,9 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
+                                        <div class="grid-image-wrapper">
                                             <img src="" alt="" />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -708,21 +924,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -733,7 +961,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -750,10 +977,9 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
+                                        <div class="grid-image-wrapper">
                                             <img src="" alt="" />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -778,21 +1004,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -803,7 +1041,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -820,10 +1057,9 @@
                             <div>
                                 <div class="post-thumbnail">
                                     <a href="">
-                                        <div>
+                                        <div class="grid-image-wrapper">
                                             <img src="" alt="" />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="post">
@@ -848,21 +1084,33 @@
                                                 </a>
                                             </div>
                                             <div
-                                                class="post-mata text-alpha-black"
+                                                class="post-meta text-alpha-black"
                                             >
                                                 <time class="meta-time"
                                                     >n일 전</time
                                                 >
                                             </div>
-                                            ::after
                                         </div>
-                                        <div>
-                                            <div class="post-tags">
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
-                                                <a href="">태그</a>
+                                        <div class="post-tags-action-wrapper">
+                                            <div
+                                                class="post-tags"
+                                                style="margin-top: 0"
+                                            >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
+                                                <a href="" class="general-tag"
+                                                    >태그</a
+                                                >
                                             </div>
                                             <div class="post-action">
                                                 <div class="dropdown">
@@ -873,7 +1121,6 @@
                                                         <i
                                                             class="fal ellipsis-h"
                                                         >
-                                                            ::before
                                                         </i>
                                                     </button>
                                                 </div>
@@ -887,16 +1134,16 @@
                     <div class="refresh-contents" style="margin-top: 8px">
                         <a class="btn btn-secondary" href="">
                             <span class="tag">#태그</span>
-                            "인기 포스트 더보기"
+                            " 포스트 더보기"
                         </a>
                     </div>
                 </div>
                 <div class="home-body">
                     <div class="container-title">
-                        "스토어"
+                        스토어
                         <div class="beta-badge">BETA</div>
                     </div>
-                    <div class="category-lis">
+                    <div class="category-list">
                         <a href="#" class="active">전체</a>
                         <a href="#">도서</a>
                         <a href="#">문구</a>
@@ -908,13 +1155,15 @@
                     </div>
                     <div class="goods-list-wrapper">
                         <div class="goods-list">
-                            <div class="goods-component">
+                            <div class="component-goods">
                                 <div class="goods-thumbnail">
                                     <a href="">
                                         <div class="goods-image-wrapper">
-                                            <img src="" alt="" />
+                                            <img
+                                                src="https://d3mcojo3jv0dbr.cloudfront.net/2024/07/11/16/32/6e4287b3b86fea0591805afcd964aba8.png?w=360&h=270&q=65"
+                                                alt=""
+                                            />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="goods-data">
@@ -928,12 +1177,10 @@
                                             <a href="" rel="author"> 판매처 </a>
                                         </div>
                                         <div class="goods-price">상품가격</div>
-                                        ::after
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="goods-component">
                             <div class="goods-component">
                                 <div class="goods-thumbnail">
@@ -941,7 +1188,6 @@
                                         <div class="goods-image-wrapper">
                                             <img src="" alt="" />
                                         </div>
-                                        ::after
                                     </a>
                                 </div>
                                 <div class="goods-data">
@@ -955,7 +1201,6 @@
                                             <a href="" rel="author"> 판매처 </a>
                                         </div>
                                         <div class="goods-price">상품가격</div>
-                                        ::after
                                     </div>
                                 </div>
                             </div>
@@ -966,7 +1211,6 @@
                                             <div class="goods-image-wrapper">
                                                 <img src="" alt="" />
                                             </div>
-                                            ::after
                                         </a>
                                     </div>
                                     <div class="goods-data">
@@ -984,7 +1228,6 @@
                                             <div class="goods-price">
                                                 상품가격
                                             </div>
-                                            ::after
                                         </div>
                                     </div>
                                 </div>
@@ -997,7 +1240,6 @@
                                                 >
                                                     <img src="" alt="" />
                                                 </div>
-                                                ::after
                                             </a>
                                         </div>
                                         <div class="goods-data">
@@ -1015,7 +1257,6 @@
                                                 <div class="goods-price">
                                                     상품가격
                                                 </div>
-                                                ::after
                                             </div>
                                         </div>
                                     </div>
@@ -1025,7 +1266,7 @@
                     </div>
                     <div class="refresh-contents" style="margin-top: 8px">
                         <a class="btn btn-secondary" href="">
-                            "스토어 상품 더보기"
+                            스토어 상품 더보기
                         </a>
                     </div>
                 </div>
@@ -1033,37 +1274,30 @@
         </main>
         <footer class="footer slide" role="contentinfo">
             <div class="container">
-                <ul>
+                <ul class="list-inline">
                     <li class="list-inline-item">
                         <a href="">서비스 소개</a>
-                        ::after
                     </li>
                     <li class="list-inline-item">
                         <a href="">이용약관</a>
-                        ::after
                     </li>
                     <li class="list-inline-item">
                         <a href="">
                             <b>개인정보처리방침</b>
                         </a>
-                        ::after
                     </li>
 
                     <li class="list-inline-item">
                         <a href="">청소년보호정책</a>
-                        ::after
                     </li>
                     <li class="list-inline-item">
                         <a href="">도움센터</a>
-                        ::after
                     </li>
                     <li class="list-inline-item">
                         <a href="">권리침해신고센터</a>
-                        ::after
                     </li>
                     <li class="list-inline-item">
                         <a href="">공식 채널</a>
-                        ::after
                     </li>
                     <li class="list-inline-item diver-none">회사 소개 문의</li>
                     <li class="list-inline-item copyright">@ Posttype. Inc.</li>
