@@ -266,10 +266,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     unicode-bidi: isolate;
 }
 
-.navbar {
-    position: relative;
-    padding: 0;
-}
 
 @media (min-width: 992px) {
     .navbar-first {
@@ -281,7 +277,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .navbar {
-    position: relative;
+    /* position: relative; */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -290,7 +286,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem;
+    /* padding: .5rem 1rem; */
+}
+
+.navbar {
+    position: relative;
+    padding: 0;
 }
 
 nav {
@@ -594,7 +595,7 @@ div {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-사용자 에이전트 스타일시트
+
 div {
     display: block;
     unicode-bidi: isolate;
@@ -1080,7 +1081,7 @@ label {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-사용자 에이전트 스타일시트
+
 i {
     font-style: italic;
 }s
